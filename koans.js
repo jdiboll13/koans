@@ -179,25 +179,25 @@ test('What is string concatenation?', t => {
   const fruit = 'apple'
   const dish = 'pie'
 
-  t.is(__, fruit + ' ' + dish)
+  t.is('apple pie', fruit + ' ' + dish)
 })
 
 test('What are character escape sequences?', t => {
   const stringWithAnEscapedCharacter = '\u0041pple'
 
-  t.is(__, stringWithAnEscapedCharacter, '')
+  t.is('Apple', stringWithAnEscapedCharacter, '')
 })
 
 test('How do you find the length of a string?', t => {
   const fruit = 'apple'
 
-  t.is(__, fruit.length)
+  t.is(5, fruit.length)
 })
 
 test('What is slicing a string?', t => {
   const fruit = 'apple pie'
 
-  t.is(__, fruit.slice(0, 5))
+  t.is('apple', fruit.slice(0, 5))
 })
 
 /**
@@ -211,7 +211,7 @@ test('What is an if statement?', t => {
     isPositive = true
   }
 
-  t.is(__, isPositive)
+  t.is(true, isPositive)
 })
 
 test('What is a for loop?', t => {
@@ -220,16 +220,16 @@ test('What is a for loop?', t => {
     counter = counter + i
   }
 
-  t.is(__, counter)
+  t.is(16, counter)
 })
 
 test('What is a ternary operator?', t => {
   const two = 2
   let fruit = two > 0 ? 'apple' : 'orange'
-  t.is(__, fruit)
+  t.is('apple', fruit)
 
   fruit = two < 0 ? 'apple' : 'orange'
-  t.is(__, fruit)
+  t.is('orange', fruit)
 })
 
 test('What is a switch statement?', t => {
@@ -243,7 +243,7 @@ test('What is a switch statement?', t => {
       break
   }
 
-  t.is(__, result)
+  t.is(2, result)
 })
 
 test('What is the default case of a switch statement?', t => {
@@ -260,7 +260,7 @@ test('What is the default case of a switch statement?', t => {
       break
   }
 
-  t.is(__, hobbit)
+  t.is('Merry', hobbit)
 })
 
 test('What is "null coalescing?"', t => {
